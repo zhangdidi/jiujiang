@@ -24,14 +24,14 @@
     -ms-transform:translate(0,-30px);*/
 }
 #section0 {
-	background-image: url(../image/index-banner1.jpg);
+	background-image: url(http://ojgqaw3ls.bkt.clouddn.com/jiujiang/index-banner1.jpg);
 }
-
+/*http://ojgqaw3ls.bkt.clouddn.com/jiujiang/attractions-img01.jpg*/
 #section1 {
-	background-image: url(../image/index-banner2.jpg);
+	background-image: url(http://ojgqaw3ls.bkt.clouddn.com/jiujiang/index-banner2.jpg);
 }
 #section2 {
-	background-image: url(../image/index-banner3.jpg);
+	background-image: url(http://ojgqaw3ls.bkt.clouddn.com/jiujiang/index-banner3.jpg);
 }
 .left-nav {
 	position: fixed;
