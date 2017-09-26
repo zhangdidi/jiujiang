@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+<title>九龙湿地-互动交流</title>
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/interaction.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script	type="text/javascript" src="js/jquery.smint.js" ></script>
+<script	type="text/javascript" src="js/slide.js" ></script>
+
+<script type="text/javascript">
+$(document).ready( function() {
+	
+	//菜单栏顶部固定
+    $('.subMenu').smint({
+    	'scrollSpeed' : 1000
+    });
+    
+    	
+	/*用按钮控制图片左右滚动 */  
+        $(".slide-box").Slide({  
+            effect:"scroolLoop",  
+            autoPlay:false,  
+            speed:"normal",  
+            timer:3000,  
+            steps:1  
+        });
+    
+    //动画
+	$(".banner .txt").animate({
+	    top: "50%",
+	    opacity: 1
+	}, 1000);
+
+        //头部微信二维码
+        $('#weixin-code').mouseover(function(){
+        	$('.weixin-code').fadeIn();
+        });
+        $('#weixin-code').mouseout(function(){
+        	$('.weixin-code').fadeOut();
+        });
+});
+
+</script>
+</head>
+
+<body>
+	<div class="top">
+		<div class="topbox">
+			<div class="logo">
+				<a href="index.html"><img src="image/logo.png" alt="img"  /></a>
+		    </div>
+		    <!--菜单开始-->
+		    <div class="menu">
+		    	<ul class="clearfix">
+		    		<li>
+		    			<a href="index.html"><span class="home-icon"></span>首  页</a>
+		    		</li>
+		    		<li>
+		    			<a href="introduce.html"><span class="scenic-icon"></span>景区介绍</a>
+		    		</li>
+		    		<li>
+		    			<a href="culture.html"><span class="culture-icon"></span>九龙文化</a>
+		    		</li>
+		    		<li>
+		    			<a href="tourist-guide.html"><span class="guide-icon"></span>游客指南</a>
+		    		</li>
+		    		<li>
+		    			<a href="interaction.html" class="active"><span class="interaction-icon"></span>互动交流</a>
+		    		</li>
+		    		<li>
+		    			<a href=""><span class="book-icon"></span>在线预订</a>
+		    		</li>
+		    	</ul>
+		    </div>
+		    <!--菜单结束-->		    
+		    <div class="top-right">
+		    	<ul class="clearfix">
+		    		<li class="weixin">
+		    			<a href="#" id="weixin-code"></a>
+		    		</li>
+		    		<li>
+		    			<span class="line"></span>
+		    		</li>
+		    		<li>
+				    	<a href="#">[EN]</a>
+		    		</li>
+		    	</ul>
+		    </div>
+		    
+		    <div class="weixin-code">
+		    	<img src="image/weixine-rwm.jpg" /> 
+		    </div>
+		</div>
+	</div>
+	
+	<div class="banner" style="background: url(image/interaction-banner.jpg) center center;">
+		<div class="txt">
+			<h3>互动交流</h3>
+		    <p class="describe">有你不曾发现的魅力</p>
+		</div>
+	</div>
+	
+    <div class="subMenu">
+        <div class="inner">
+            <a href="#s1" class="subNavBtn active">咨询建议</a> 
+            <a href="#s2" class="subNavBtn">壁纸下载</a>
+        </div>
+    </div>
+    
+    <!--咨询建议-->
+    <div class="wrap bg-gray s1">
+    	<div class="suggest-side">
+    		<div class="common-head">
+    			<div class="common-title">咨询建议<em>/Advice</em></div>
+    	    </div>
+    	    <div class="suggest-form">
+    	    	<ul class="clearfix">
+    	    		<li class="mr20">
+    	    			<label><em>*</em>姓名</label>
+    	    			<input type="text" class="input-style" />
+    	    		</li>
+    	    		<li>
+    	    			<label><em>*</em>联系电话</label>
+    	    			<input type="text" class="input-style" />
+    	    		</li>
+    	    		<li class="mr20">
+    	    			<label><em>*</em>称呼</label>
+    	    			<input type="text" class="input-style" />
+    	    		</li>
+    	    		<li>
+    	    			<label><em>*</em>E-mall</label>
+    	    			<input type="text" class="input-style" />
+    	    		</li>
+    	    		<li class="mr20">
+    	    			<label><em>*</em>主题</label>
+    	    			<input type="text" class="input-style" />
+    	    		</li>
+    	    		<li class="select">
+    	    			<label><em>*</em>类型</label>
+    	    			<label name="radio1" class="radio">
+    	    				<input type="radio" name="radio1" value=""/>
+    	    				咨询
+    	    			</label>
+    	    			<label name="radio2" class="radio">
+    	    				<input type="radio" name="radio3" value=""/>
+    	    				建议
+    	    			</label>
+    	    			<label name="radio3" class="radio">
+    	    				<input type="radio" name="radio3" value=""/>
+    	    				投诉
+    	    			</label>
+    	    		</li>
+    	    		<li class="content">
+    	    			<label><em>*</em>留言内容</label>
+    	    			<textarea name="" cols="" rows=""></textarea>
+    	    		</li>
+    	    	</ul>
+    	    	<div class="form-btn">
+    	    		<a href="#" class="graybtn">重  置</a>
+    	    		<a href="#" class="greenbtn">确认发送</a>
+    	    	</div>
+    	    </div>
+    	    <div id="pinterest" class="questions-list">
+                <div class="item">
+                	<div class="ask"><em class="green">问</em>：请问九龙国家湿地公园开放的时间？</div>
+                	<div class="answer"><em class="green">答</em>：周一到周日，7:30-24：00</div>
+                </div>
+                <div class="item">
+                	<div class="ask"><em class="green">问</em>：请问九龙国家湿地公园有哪些景点？</div>
+                	<div class="answer"><em class="green">答</em>：保定圩湿地、对门圩内侧湿地、连河村河滩湿地保定圩湿地、对门圩内侧湿地、连河村河滩湿地保定圩湿地、对门圩内侧湿地、连河村河滩湿地保定圩湿地、对门圩内侧湿地、连河村河滩湿地</div>
+                </div>
+                <div class="item">
+                	<div class="ask"><em class="green">问</em>：请问九龙国家湿地公园开放的时间？</div>
+                	<div class="answer"><em class="green">答</em>：周一到周日，7:30-24：00</div>
+                </div>
+                <div class="item">
+                	<div class="ask"><em class="green">问</em>：请问九龙国家湿地公园开放的时间？</div>
+                	<div class="answer"><em class="green">答</em>：周一到周日，7:30-24：00</div>
+                </div>
+            </div>
+    	    <div class="page-box">
+				<a href="#" class="page-prev">上一页</a>
+				<a href="#" class="active">1</a>
+				<a href="#">2</a>
+				<a href="#" class="page-next">下一页</a>
+			</div>
+    	</div>
+    	
+    </div>
+
+    <!--壁纸下载-->
+    <div class="wrap s2">
+    	<div class="wallpaper-side">
+    		<div class="common-head">
+    			<div class="common-title">壁纸下载<em>/Wallpaper Download</em></div>
+    	    </div>
+    	    <div class="slide-box">  
+                <div class="slide-arrow">
+		        	<a class="prev" href="javascript:void(0);">PREV</a>
+		        	<a class="next" href="javascript:void(0);">NEXT</a>
+		        </div> 		        
+		        <div class="slide-content">  
+		            <ul class="slide-list">  
+		                <li>  
+		                    <div class="img"><img src="http://ojgqaw3ls.bkt.clouddn.com/lishui1.jpg" alt="image" /></div> 
+		                    <div class="txt ellipsis">《瓯江帆影美如画》</div>  
+		                    <div class="center"><a href="#" class="green-btn">点击下载</a></div>
+		                </li>  
+		                <li>  
+		                    <div class="img"><img src="http://ojgqaw3ls.bkt.clouddn.com/lishui2.jpg" alt="image" /></div> 
+		                    <div class="txt ellipsis">《瓯江帆影美如画》2</div>  
+		                    <div class="center"><a href="#" class="green-btn">点击下载</a></div>
+		                </li>
+		            </ul>  
+		        </div>  
+		    </div>
+    	</div>
+    	
+    </div>
+
+	<div class="copyright-wrap">
+		<div class="copyright-box">
+			<span>咨询热线<i class="tel">0578-8166733</i></span>
+			<span class="floatR">© 2017 九龙湿地公园 保留所有权利</span>
+			<!-- <span class="floatR">
+				<iframe allowtransparency="true" frameborder="0" width="240" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=&f=c0c0c0&q=0&e=0&a=1&c=54511&w=240&h=36&align=center"></iframe>
+			</span> -->
+		</div>
+	</div>
+	
+	
+	<!--返回顶部 -->
+    <a id="top_button" style="" href="javascript:void(0);"></a>
+
+
+<script type="text/javascript">
+	function Waterfall(param){
+	    this.id = typeof param.container == 'string' ? document.getElementById(param.container) : param.container;
+	    this.colWidth = param.colWidth;
+	    this.colCount = param.colCount || 5;
+	    this.cls = param.cls && param.cls != '' ? param.cls : 'item';
+	    this.init();
+	}
+	Waterfall.prototype = {
+	    getByClass:function(cls,p){
+	        var arr = [],reg = new RegExp("(^|\\s+)" + cls + "(\\s+|$)","g");
+	        var nodes = p.getElementsByTagName("*"),len = nodes.length;
+	        for(var i = 0; i < len; i++){
+	            if(reg.test(nodes[i].className)){
+	                arr.push(nodes[i]);
+	                reg.lastIndex = 0;
+	            }
+	        }
+	        return arr;
+	    },
+	    maxArr:function(arr){
+	        var len = arr.length,temp = arr[0];
+	        for(var ii= 1; ii < len; ii++){
+	            if(temp < arr[ii]){
+	                temp = arr[ii];
+	            }
+	        }
+	        return temp;
+	    },
+	    getMar:function(node){
+	        var dis = 0;
+	        if(node.currentStyle){
+	            dis = parseInt(node.currentStyle.marginBottom);
+	        }else if(document.defaultView){
+	            dis = parseInt(document.defaultView.getComputedStyle(node,null).marginBottom);
+	        }
+	        return dis;
+	    },
+		getMinCol:function(arr){
+			var ca = arr,cl = ca.length,temp = ca[0],minc = 0;
+			for(var ci = 0; ci < cl; ci++){
+				if(temp > ca[ci]){
+					temp = ca[ci];
+					minc = ci;
+				}
+			}
+			return minc;
+		},
+	    init:function(){
+	        var _this = this;
+	        var col = [],//列高
+			    iArr = [];//索引
+	        var nodes = _this.getByClass(_this.cls,_this.id),len = nodes.length;
+	        for(var i = 0; i < _this.colCount; i++){
+	            col[i] = 0;
+	        }
+	        for(var i = 0; i < len; i++){
+	            nodes[i].h = nodes[i].offsetHeight + _this.getMar(nodes[i]);
+	            iArr[i] = i;
+	        }
+			
+			for(var i = 0; i < len; i++){
+				var ming = _this.getMinCol(col);
+				nodes[i].style.left = ming * _this.colWidth + "px";
+				nodes[i].style.top = col[ming] + "px";
+				col[ming] += nodes[i].h;
+			}
+			console.log(_this.maxArr(col));
+			_this.id.style.height = _this.maxArr(col) + "px";
+	    }
+	};
+	new Waterfall({
+	    "container":"pinterest",
+	    "colWidth":410,
+	    "colCount":3
+	});
+</script>
+</body>
+
+</html>

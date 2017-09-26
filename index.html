@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>九龙湿地-主页</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/slide.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            /*背景图切换 */
+            $('#fullpage').fullpage({
+                navigation: true,
+                loopBottom: true,
+                loopTop: true,
+                afterLoad: afterLoad,
+                onLeave: onLeave
+            });
+            
+
+            //回调函数
+            function afterLoad(anchorLink, index) {
+                //动画
+                if (index === 1) {
+                    $("#section0 .txt").animate({
+                        bottom: "50%",
+                        opacity: 1
+                    }, 1000);
+                }
+                if (index === 2) {
+                    $("#section1 .txt").animate({
+                        bottom: "50%",
+                        opacity: 1
+                    }, 1000);
+                }
+                if (index === 3) {
+                    $("#section2 .txt").animate({
+                        bottom: "50%",
+                        opacity: 1
+                    }, 1000);
+                }
+            }
+
+            function onLeave(index, direction) {
+                if (index === 1) {
+                     $("#section0 .txt").animate({
+                        bottom: "-50%",
+                        opacity: 1
+                    }, 0);
+                }
+                if (index === 2) {
+                    $("#section1 .txt").animate({
+                        bottom: "-50%",
+                        opacity: 1
+                    }, 0);
+                }
+                if (index === 3) {
+                    $("#section2 .txt").animate({
+                        bottom: "-50%",
+                        opacity: 1
+                    }, 0);
+                }
+            };
+
+            /*用按钮控制图片左右滚动 */
+            $(".slide-box").Slide({
+                effect: "scroolLoop",
+                autoPlay: false,
+                speed: "normal",
+                timer: 3000,
+                steps: 1
+            });
+
+
+            var focusWidth = $(window).width() / 4 - 1;
+            $('.slide-box').width(focusWidth);
+            $('.slide-box .slide-content').width(focusWidth);
+            $('.slide-list li').width(focusWidth);
+            $('.slide-list li a').width(focusWidth);
+            $('.slide-list li a.img').width(focusWidth);
+            $('.slide-list').width($('.slide-list').children().size() * $('.slide-list').children().first().width());
+            $('.video-box .video-cover').width($(window).width() / 4);
+
+            //头部微信二维码
+            $('#weixin-code').mouseover(function () {
+                $('.weixin-code').fadeIn();
+            });
+            $('#weixin-code').mouseout(function () {
+                $('.weixin-code').fadeOut();
+            });
+
+            //视频播放弹出层
+            $('.video-box').find('.video-cover').click(function () {
+                $('#video-mask').show();
+            });
+
+            // 关闭视频播放层
+            $('.btn-close').click(function(){
+                $('#video-mask').hide();
+            })
+
+
+        });
+    </script>
+
+</head>
+<body>
+    <div class="top top-fixed">
+        <div class="topbox">
+            <div class="logo">
+                <a href="index.html"><img src="image/logo.png" alt="img" /></a>
+            </div>
+            <!--菜单开始-->
+            <div class="menu">
+                <ul class="clearfix">
+                    <li>
+                        <a href="index.html" class="active"><span class="home-icon"></span>首  页</a>
+                    </li>
+                    <li>
+                        <a href="introduce.html"><span class="scenic-icon"></span>景区介绍</a>
+                    </li>
+                    <li>
+                        <a href="culture.html"><span class="culture-icon"></span>九龙文化</a>
+                    </li>
+                    <li>
+                        <a href="tourist-guide.html"><span class="guide-icon"></span>游客指南</a>
+                    </li>
+                    <li>
+                        <a href="interaction.html"><span class="interaction-icon"></span>互动交流</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="book-icon"></span>在线预订</a>
+                    </li>
+                </ul>
+            </div>
+            <!--菜单结束-->
+            <div class="top-right">
+                <ul class="clearfix">
+                    <li class="weixin">
+                        <a href="#" id="weixin-code"></a>
+                    </li>
+                    <li>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <a href="#">[EN]</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="weixin-code">
+                <img src="image/weixine-rwm.jpg" />
+            </div>
+
+        </div>
+    </div>
+
+    <div class="left-nav">
+        <ul>
+            <li class="first">
+                <a href="javascript:void(0);"></a>
+            </li>
+            <li>
+                <a href="">游</a>
+            </li>
+            <li>
+                <a href="">吃</a>
+            </li>
+            <li>
+                <a href="">住</a>
+            </li>
+            <li>
+                <a href="">购</a>
+            </li>
+            <li>
+                <a href="">娱</a>
+            </li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="section0">
+        	<div class="txt">
+        		<h3>月色廊桥</h3>
+                <p class="describe">续写辉煌的历史</p>
+        	</div>
+        </div>
+        <div class="section" id="section1">
+            <div class="txt">
+            	<h3>九龙国家湿地公园</h3>
+                <p class="describe">八百里瓯江最为原生态的景观廊道</p>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="txt">
+            	<h3>朝霞映龙潭</h3>
+                <p class="describe">浓郁的田园水乡风情</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-fixed">
+        <!--景区动态-->
+        <div class="side scenic-side">
+            <div class="foot-title">
+                <div class="foot-title-bg"></div>
+                <div class="foot-title-txt">
+                    <img src="image/jinqu-icon.png" alt="img" />景区动态
+                </div>
+            </div>
+            <div class="foot-content">
+                <div class="foot-head" style="background-image: url(image/jinqu-img01.jpg);"></div>
+                <div class="new-list">
+                    <ul>
+                        <li>
+                            <a href="news-detail.html">
+                                <span class="title ellipsis">《丽水九龙湿地4A景区创建专刊》[2017]1期</span>
+                                <span class="date">2017-2-12</span>
+                            </a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="news-detail.html">
+                                <span class="title ellipsis">南明湖区域怎样文明过春节？限制燃放烟花爆竹，禁</span>
+                                <span class="date">2017-2-12</span>
+                            </a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="news-detail.html">
+                                <span class="title ellipsis">年怎么过？岁末年初当自勉！</span>
+                                <span class="date">2017-2-12</span>
+                            </a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="news-detail.html">
+                                <span class="title ellipsis">南明湖畔，最绚丽的灯光，已逐渐点亮！她，怎么看</span>
+                                <span class="date">2017-2-12</span>
+                            </a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="news-detail.html">
+                                <span class="title ellipsis">画里品湿地系列 * 2九龙，最美的风景，拥</span>
+                                <span class="date">2017-2-12</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--在线预订-->
+        <div class="side book-side">
+            <div class="foot-title">
+                <div class="foot-title-bg"></div>
+                <div class="foot-title-txt">
+                    <img src="image/yudin-icon.png" alt="img" />在线预订
+                </div>
+            </div>
+            <div class="foot-head" style="background-image: url(image/book-img01.jpg);"></div>
+            <div class="book-list">
+                <dl>
+                    <dt class="ellipsis">九龙湿地景区 套票</dt>
+                    <dd class="describe">九龙湿地“松坑绿渚”位于九龙湿地“松坑绿渚”位于九龙湿地“松坑绿渚”位于九龙湿地“松</dd>
+                    <dd>
+                        <span><em class="price">99</em>元</span>
+                        <a href="#" class="green-btn">立即预订</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <!--景点推荐-->
+        <div class="side scenic-recommend-side">
+            <div class="foot-title">
+                <div class="foot-title-bg"></div>
+                <div class="foot-title-txt">
+                    <img src="image/tuijian-icon.png" alt="img" />景点推荐
+                </div>
+            </div>
+            <div class="slide-box">
+                <div class="slide-arrow">
+                    <a class="prev" href="javascript:void(0);"></a>
+                    <a class="next" href="javascript:void(0);"></a>
+                </div>
+                <div class="slide-content">
+                    <ul class="slide-list">
+                        <li>
+                            <a href="#" class="img" style="background-image: url(image/jindian-img01.jpg);">
+                                <p class="txt">碧溪鹭影</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="img" style="background-image: url(image/index-banner1.jpg);">
+                                <p class="txt">碧溪鹭影2</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="img" style="background-image: url(image/index-banner2.jpg);">
+                                <p class="txt">碧溪鹭影3</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--视频欣赏-->
+        <div class="side video-side">
+            <div class="foot-title">
+                <div class="foot-title-bg"></div>
+                <div class="foot-title-txt">
+                    <img src="image/video-icon.png" alt="img" />视频欣赏
+                </div>
+            </div>
+            <div class="video-box">
+                <a href="#" class="video-cover" style="background-image: url(image/video-img01.jpg) ;"><span class="btn"></span></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright-wrap copyright-fixed">
+        <div class="copyright-box">
+            <span>咨询热线<i class="tel">0578-8166733</i></span>
+            <span class="floatR">© 2017 九龙湿地公园 保留所有权利</span>
+           <!--  <span class="floatR">
+                <iframe allowtransparency="true" frameborder="0" width="240" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=&f=c0c0c0&q=0&e=0&a=1&c=54511&w=240&h=36&align=center"></iframe>
+            </span> -->
+        </div>
+    </div>
+
+
+    <!--景区视频弹出层-->
+    <div id="video-mask" class="mask-bg">
+        <div class="btn-close" style="text-align: center; font-size: 70px; color: #fff; margin-top: 300px;">关闭</div>
+    </div>
+  <!--   <div class="video-position" style="display: none;">
+        <video src="http://9top.com/upload/New_Videos/20170118155659003.mp4" controls="controls" autoplay="autoplay"></video>
+    </div> -->
+
+</body>
+</html>

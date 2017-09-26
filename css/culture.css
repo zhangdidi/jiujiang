@@ -1,0 +1,428 @@
+.page1 {
+	background: url(../image/culturebg01.jpg) 50%;
+}
+
+.page2 {
+	background: url(../image/culturebg02.jpg) 50%;
+}
+.page3{
+	background: url(../image/culturebg03-1.jpg) 50%;
+}
+.page4 {
+	background: url(../image/culturebg04.jpg) 50%;
+}
+.page5 {
+	background: url(../image/culturebg05.jpg) 50%;
+}
+#culture-menu {
+	position: fixed;
+	right: 26px;
+	top: 50%;
+	margin-top: -80px;
+	z-index: 70;
+	width: 100px;
+}
+
+#culture-menu li {
+	display: block;
+	padding-bottom: 8px;
+}
+
+#culture-menu a {
+	width: 67px;
+	height: 24px;
+	line-height: 24px;
+	display: inline-block;
+	text-align: right;
+	padding-right: 33px;
+	color: #333;
+	background: #fff url(../image/culture-icon.png) no-repeat 75px center \9;
+	background: rgba(255,255,255,0.6) url(../image/culture-icon.png) no-repeat 75px center;
+}
+
+#culture-menu .active a {
+	background: #8dc21c url(../image/culture-icon.png) no-repeat 75px center \9;
+	background: #8dc21c url(../image/culture-icon.png) no-repeat 75px center;
+	color: #fff;
+}
+
+/*九龙传说*/
+.dragon-story {
+	margin-top: 158px;
+	margin-left: 88px;
+	background: url(../image/dragon-story-headbg.png) no-repeat;
+	width: 600px;
+	padding-top: 163px;
+	position: relative;
+	transition: all 1s;
+	opacity: 0;
+	transform: scale(0.5,0.5);
+	-webkit-transform: scale(0.5,0.5);
+}
+.dragon-story .title {
+	position: absolute;
+	top: 115px;
+	left: 42px;
+	font-size: 36px;
+	color: #fff;
+	font-family: "宋体";
+	padding-left: 16px;
+	background: url(../image/dot.png) no-repeat left center;
+}
+.dragon-story .txt {
+	line-height: 30px;
+	font-size: 16px;
+	color: #fff;
+	background: url(../image/dragon-story-footbg.png) no-repeat left bottom;
+	padding: 5px 42px 35px 42px;
+	overflow: hidden;
+	text-align: justify;
+}
+.active .dragon-story {
+	opacity: 1;
+	transition-delay: 0.5s;
+	transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+}
+/*九龙传说*/
+.origin {
+	margin-top: 240px;
+	padding-right: 88px;
+	float: right;
+	width: 540px;
+	padding-left: 240px;
+	position: relative;
+	min-height: 300px;
+}
+.origin .origin-title {
+	width: 228px;
+	height: 212px;
+	position: absolute;
+	left: 0;
+	top: 55px;
+	transition: all 1s;
+	opacity: 0;
+	transform: scale(0.5,0.5);
+	-webkit-transform: scale(0.5,0.5);
+	left: -300px;
+}
+.active .origin .origin-title {
+	opacity: 1;
+	transition-delay: 1s;
+	transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	left: 0;
+}
+.origin .origin-tab-bar {
+	overflow: hidden;
+	height: 32px;
+	transition: all 1s;
+	opacity: 0;
+	transform: scale(0.1,0.1);
+	-webkit-transform: scale(0.1,0.1);
+	right: -1000px;
+}
+.origin .origin-tab-bar li {
+	display: inline-block;
+	float: left;
+	padding-right: 1px;
+}
+.origin .origin-tab-bar li a {
+	height: 30px;
+	line-height: 30px;
+	border: #000 solid 1px;
+	padding: 0 20px 0 30px;
+	background: url(../image/dot-black.png) no-repeat 20px center;
+	display: inline-block;
+	font-size: 16px;
+	color: #000;
+}
+.origin .origin-tab-bar li.active a {
+	color: #fff;
+	background: #000 url(../image/dot-white.png) no-repeat 20px center;
+}
+.origin .txt {
+	line-height: 30px;
+	font-size: 16px;
+	color: #333;
+	padding-top: 20px;
+	overflow: hidden;
+	text-align: justify;
+	transition: all 1s;
+	opacity: 0;
+	transform: scale(0.1,0.1);
+	-webkit-transform: scale(0.1,0.1);
+	left: -1000px;
+}
+.active .origin .origin-tab-bar,.active .origin .txt {
+	opacity: 1;
+	transition-delay: 0.8s;
+	transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	right: 0;
+}
+/*九龙文化*/
+.culture {
+	margin-top: 200px;
+	width: 644px;
+	position: relative;
+	transition: all 1s;
+	opacity: 0;
+	transform: scale(0.1,0.1);
+	-webkit-transform: scale(0.1,0.1);
+	right: -1000px;
+}
+.active .culture {
+	opacity: 1;
+	transition-delay: 0.2s;
+	transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	right: 0;
+}
+.culture .culture-tab-bar {
+	overflow: hidden;
+	height: 32px;
+}
+.culture .culture-tab-bar li {
+	display: inline-block;
+	float: left;
+	padding-right: 1px;
+}
+.culture .culture-tab-bar li a {
+	height: 30px;
+	line-height: 30px;
+	border: #fff solid 1px;
+	padding: 0 25px 0 35px;
+	background: url(../image/dot-white.png) no-repeat 25px center;
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+}
+.culture .culture-tab-bar li.active a {
+	background: #fff url(../image/dot-black.png) no-repeat 25px center;
+	color: #000;
+}
+.culture .border-top {
+	margin-top: 30px;
+}
+.culture-tab-content {
+	padding: 0 20px;
+	overflow: hidden;
+}
+.culture .txt {
+	line-height: 30px;
+	font-size: 16px;
+	color: #fff;
+	overflow: hidden;
+	text-align: justify;
+}
+.culture .txt img {
+	padding-top: 10px;
+}
+.culture-common-title {
+	font-size: 36px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	background: url(../image/dot.png) no-repeat center top;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "宋体";
+}
+.culture .culture-common-title {
+	color: #fff;
+}
+/*瓯江船帮*/
+.ship {
+	margin: 200px auto 0 auto;
+	width: 644px;
+	position: relative;
+	transition: all 1s;
+	opacity: 0;
+	transform: scale(0.1,0.1);
+	-webkit-transform: scale(0.1,0.1);
+	bottom: -1000px;
+}
+.active .ship {
+	opacity: 1;
+	transition-delay: 0.5s;
+	transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	bottom: 0;
+}
+.ship .ship-tab-bar {
+	overflow: hidden;
+	height: 32px;
+	text-align: center;
+}
+.ship .ship-tab-bar li {
+	display: inline-block;
+	padding-right: 1px;
+}
+.ship .ship-tab-bar li a {
+	height: 30px;
+	line-height: 30px;
+	border: #000 solid 1px;
+	padding: 0 26px 0 36px;
+	background: url(../image/dot-black.png) no-repeat 26px center;
+	display: inline-block;
+	font-size: 16px;
+	color: #000;
+}
+.ship .ship-tab-bar li.active a {
+	background: #000 url(../image/dot-white.png) no-repeat 26px center;
+	color: #fff;
+}
+.ship .border-top {
+	margin-top: 30px;
+}
+.ship-tab-content {
+	padding: 0 20px;
+	overflow: hidden;
+}
+.ship .txt {
+	line-height: 30px;
+	font-size: 16px;
+	color: #000;
+	overflow: hidden;
+	text-align: justify;
+}
+
+.ship .culture-common-title {
+	color: #000;
+}
+/*碧湖文踪*/
+.lake {
+	margin-top: 100px;
+	width: 900px;
+	position: relative;
+	transition: all 1s;
+	opacity: 0;
+	transform: scale(0.1,0.1);
+	-webkit-transform: scale(0.1,0.1);
+	left: -800px;
+}
+.active .lake {
+	opacity: 1;
+	transition-delay: 0.5s;
+	transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	left: 0;
+}
+.lake .lake-tab-bar {
+	overflow: hidden;
+	height: 32px;
+	text-align: center;
+}
+.lake .lake-tab-bar li {
+	display: inline-block;
+	padding-right: 1px;
+}
+.lake .lake-tab-bar li a {
+	height: 30px;
+	line-height: 30px;
+	border: #000 solid 1px;
+	padding: 0 26px 0 36px;
+	background: url(../image/dot-black.png) no-repeat 26px center;
+	display: inline-block;
+	font-size: 16px;
+	color: #000;
+}
+.lake .lake-tab-bar li.active a {
+	background: #000 url(../image/dot-white.png) no-repeat 26px center;
+	color: #fff;
+}
+.lake .border-top {
+	margin-top: 30px;
+}
+.lake-tab-content {
+	padding: 0 20px;
+}
+.lake .txt {
+	line-height: 30px;
+	font-size: 16px;
+	color: #000;
+	overflow: hidden;
+	text-align: justify;
+	margin-top: -20px;
+}
+
+.lake .culture-common-title {
+	color: #000;
+}
+.lake-preview	{
+ 	position: relative;
+	width: 860px;
+	height: 191px;
+	margin: 24px auto 0 auto;
+}
+
+.lake-preview .lake-content {
+	width: 734px;
+	height: 191px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.lake-list {
+	position: absolute;
+	float: none;
+	overflow: hidden;
+	zoom: 1;
+	margin-right: -16px;
+}
+
+.lake-list li {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 234px;
+	height: 191px;
+	margin-right: 16px;
+}
+
+.lake-list li a {
+	height: 234px;
+	display: block;
+	position: relative;
+}
+.lake-list li img {
+	width: 234px;
+	height: 161px;
+}
+
+.lake-list li .title {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #000;
+	font-size: 16px;
+}
+.lake-list li.active a .txt,.lake-list li a:hover .txt {
+	color: #88c500;
+}
+
+.lake-arrow a {
+	display: block;
+	z-index: 99;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	text-indent: -999em;
+	text-decoration: none;
+	position: absolute;
+	top: 75px;
+	
+}
+.lake-arrow a.prev {
+	left: 0;
+	background: url(../image/mask-arrow-prev.png) no-repeat;
+	background-size: 40px 40px;
+}
+
+.lake-arrow a.next {
+	right: 0;
+	background: url(../image/mask-arrow-next.png) no-repeat center center;
+	background-size: 40px 40px;
+}

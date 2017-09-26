@@ -1,0 +1,352 @@
+.section {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	overflow: hidden;
+	/*transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;*/
+}
+
+.section:hover {
+	/*opacity: 0.9;*/
+	/*transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -ms-transform:scale(1.1);*/
+    /*transform:translate(0,-30px);
+    -webkit-transform:translate(0,-30px);
+    -moz-transform:translate(0,-30px);
+    -o-transform:translate(0,-30px);
+    -ms-transform:translate(0,-30px);*/
+}
+#section0 {
+	background-image: url(../image/index-banner1.jpg);
+}
+
+#section1 {
+	background-image: url(../image/index-banner2.jpg);
+}
+#section2 {
+	background-image: url(../image/index-banner3.jpg);
+}
+.left-nav {
+	position: fixed;
+	left: 44px;
+	top: 50%;
+	margin-top: -167px;
+	z-index: 100;
+}
+.left-nav li {
+	width: 55px;
+	height: 55px;
+	display: block;
+	padding-bottom: 1px;
+}
+.left-nav li a {
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	background: url(../image/left-nav-bg.png) no-repeat;
+	
+}
+.left-nav li a:hover {
+	background: url(../image/left-nav-hoverbg.png) no-repeat;
+}
+.left-nav li.first a {
+	background: url(../image/address.png) no-repeat center center;
+}
+.left-nav li.first a:hover {
+	background: url(../image/address-hover.png) no-repeat center center;
+}
+.foot-fixed {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 56px;
+	z-index: 999;
+}
+.foot-fixed .side {
+	width: 25%;
+	padding-right: 1px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+	float: left;
+    height: 40px;
+	overflow: hidden;
+	transition: height 1s;
+    -moz-transition: height 1s;	/* Firefox 4 */
+	-webkit-transition: height 1s;	/* Safari 和 Chrome */
+	-o-transition: height 1s;	/* Opera */
+}
+.foot-fixed .video-side {
+	padding-right: 0;
+}
+.foot-fixed .foot-title {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	position: relative;
+}
+.foot-fixed .foot-title .foot-title-bg {
+	width: 100%;
+	height: 40px;
+	background: #8dc21c;
+	opacity: 0.8;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.foot-fixed .foot-title .foot-title-txt {
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	text-align: center;
+}
+.foot-fixed .foot-title img {
+	vertical-align: middle;
+}
+.foot-fixed .side:last-child {
+	padding-right: 0;
+}
+.foot-fixed .side:hover {
+	height: 282px;
+	background: #8dc21c;
+}
+.foot-head {
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 82px;
+}
+
+.foot-fixed .foot-title:hover .foot-title-bg {
+	opacity: 1;
+}
+
+.foot-fixed .foot-content {
+	height: 242px;
+	overflow: hidden;
+}
+.new-list {
+	overflow: hidden;
+	background: #f0f0f0;
+	padding: 10px 10px 0 10px;
+}
+.new-list li {
+	line-height: 30px;
+	height: 30px;
+}
+.new-list li a {
+	display: block;
+	padding-right: 110px;
+	height: 30px;
+	color: #666;
+	font-size: 14px;
+	position: relative;
+}
+.new-list li a:hover {
+	color: #8dc21c;
+}
+.new-list li .title {
+	display: block;
+}
+.new-list li .date {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 80px;
+	text-align: right;
+	color: #b0b0b0;
+	font-family: arial;
+}
+.scenic-side {
+	left: 0;
+}
+.book-side {
+	left: 25%;
+}
+.scenic-recommend-side {
+	left: 50%;
+}
+.video-side {
+	left: 75%;
+}
+.book-list {
+	background: #f0f0f0;
+	overflow: hidden;
+	padding: 15px 10px;
+}
+.book-list dl dt {
+	color: #333;
+	font-size: 18px;
+	line-height: 30px;
+	height: 30px;
+}
+.book-list dl dd {
+	padding-top: 10px;
+}
+.book-list dl .describe {
+	color: #666;
+	line-height: 24px;
+	height: 48px;
+	overflow: hidden;
+}
+.book-list dl .green-btn {
+	float: right;
+	margin-top: 5px;
+}
+
+/*景点推荐*/
+.slide-box {
+	position: relative;
+	width: auto;
+	height: 242px;
+	background: #fff;
+}
+
+.slide-box .slide-content {
+	width: auto;
+	height: 242px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slide-list {
+	position: absolute;
+	float: none;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.slide-list li {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: auto;
+	height: 242px;
+}
+
+.slide-list li a {
+	height: 242px;
+	display: block;
+	position: relative;
+}
+.slide-list li .img {
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.slide-list li .txt {
+	width: 100%;
+	overflow: hidden;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	background: rgba(51,51,51,0.2);
+	color: #fff;
+	font-size: 18px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+
+.slide-arrow a {
+	display: block;
+	z-index: 99;
+	width: 48px;
+	height: 48px;
+	overflow: hidden;
+	text-indent: -999em;
+	text-decoration: none;
+	position: absolute;
+	top: 97px;
+}
+.slide-arrow a.prev {
+	left: 10px;
+	background: url(../image/arrow-left.png) no-repeat center center;
+}
+
+.slide-arrow a.prev:hover {
+	background: rgba(141,191,28,0.8) url(../image/arrow-left.png) no-repeat center center;
+}
+
+.slide-arrow a.next {
+	right: 10px;
+	background: url(../image/arrow-right.png) no-repeat center center;
+}
+
+.slide-arrow a.next:hover {
+	background: rgba(141,191,28,0.8) url(../image/arrow-right.png) no-repeat center center;
+}
+
+/*视频欣赏*/
+.video-box {
+	width: 100%;
+	height: 242px;
+}
+.video-box .video-cover {
+	position: relative;
+	background-repeat:no-repeat;
+	background-position: center center;
+	height: 242px;
+	display: block;
+}
+.video-box .video-cover .btn {
+	background: url(../image/video-play-btn.png) no-repeat;
+	display: inline-block;
+	width: 68px;
+	height: 68px;
+	position: absolute;
+	left: 50%;
+	top: 87px;
+	margin-left: -34px;
+	z-index: 100;
+}
+
+.section {
+	font-family: "宋体";
+    color: #fff;
+    position: relative;
+}
+.section .txt {
+	width: 100%;
+	height: 110px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-top: -55px;
+	text-align: center;
+	color: #fff;
+	line-height: 1;
+	opacity: 0;
+}
+.section h3 {
+	display: block;
+	font-weight: normal;
+	text-align: center;
+	font-size: 60px;
+}
+.section .describe {
+	font-size: 26px;
+	padding-top: 24px
+}

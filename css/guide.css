@@ -1,0 +1,542 @@
+.guide-side {
+	width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 78px;
+}
+/*游玩攻略*/
+.strategy-type {
+	margin-right: -11px;
+	overflow: hidden;
+}
+.strategy-type li {
+	float: left;
+	height: 290px;
+	margin-right: 11px;
+	margin-bottom: 11px;
+	display: inline;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+.strategy-type li img {
+	height: 290px;
+	transition: all 2s;
+	cursor: pointer; 
+}
+.strategy-type li:hover img {
+	transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -o-transform:scale(1.5);
+}
+.strategy-type li a {
+	color: #fff;
+	display: block;
+}
+.strategy-type li .title {
+	font-size: 36px;
+	position: absolute;
+	width:100%;
+	top: 90px;
+	left: 0;
+}
+.strategy-type li .line {
+	background: url(../image/guide-line.png) no-repeat center center;
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	top: 150px;
+	left: 0;
+}
+.strategy-type li .describe {
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	top: 170px;
+	left: 0;
+	font-size: 16px;
+	line-height: 30px;
+}
+/*交通指引*/
+.traffic-side {
+	width: 100%;
+	padding-bottom: 78px;
+}
+.traffic-map {
+	width: 100%;
+	height: 700px;
+}
+.traffic-box {
+	width: 1200px;
+	height: 0;
+	margin: 0 auto;
+	position: relative;
+}
+.right-panel {
+	width: 298px;
+	height: 698px;
+	position: absolute;
+	right: 0;
+	top: -700px;
+	z-index: 999;
+	background: #fff;
+	border: #eee solid 1px;
+}
+.right-panel .tab-bar {
+	font-size: 16px;
+	height: 50px;
+	text-align: center;
+}
+.right-panel .tab-bar li {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.right-panel .tab-bar li a {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	border-bottom: #eee solid 2px;
+	background: #fff;
+	color: #333;
+}
+.right-panel .tab-bar li.active a {
+	border-bottom: #0dcc8f solid 2px;
+	background: #0dcc8f;
+	color: #fff;
+}
+.landmark {
+	overflow: hidden;
+}
+.landmark li {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	padding: 20px 0;
+}
+.landmark li a {
+	display: block;
+}
+.landmark li .icon {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+}
+.landmark li .icon img {
+	width: 38px;
+	height: 38px;
+}
+.landmark li p {
+	color: #333;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.right-panel .tabline-bar {
+	height: 40px;
+	text-align: center;
+}
+.right-panel .tabline-bar li {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.right-panel .tabline-bar li a {
+	display: block;
+	height: 38px;
+	line-height: 38px;
+	border-bottom: #eee solid 2px;
+	background: #fff;
+	color: #333;
+}
+.right-panel .tabline-bar li a span {
+	display: inline-block;
+	background: url(../image/tab-icon.png) no-repeat;
+	padding-right: 10px;
+	vertical-align: middle;
+	background-size: 160px 27px;
+}
+.right-panel .tabline-bar li a span.walk-icon {
+	background-position: -1px 0;
+	width: 20px;
+	height: 27px;
+}
+.right-panel .tabline-bar li.active a span.walk-icon {
+	background-position: -38px 0;
+}
+.right-panel .tabline-bar li a span.drive-icon {
+	background-position: -81px 0;
+	width: 25px;
+	height: 27px;
+}
+.right-panel .tabline-bar li.active a span.drive-icon {
+	background-position: -134px 0;
+}
+.right-panel .tabline-bar li.active a {
+	border-bottom: #0dcc8f solid 2px;
+}
+.line-search {
+	padding: 0 64px 0 44px;
+	overflow: hidden;
+	height: 64px;
+	position: relative;
+}
+.line-search .change-btn {
+	width: 44px;
+	height: 64px;
+	background: url(../image/change-icon.png) no-repeat center center;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.line-search .line-form {
+	width: 100%;
+	overflow: hidden;
+}
+.line-search .line-form li {
+	height: 30px;
+	line-height: 30px;
+	border-bottom: #eee solid 1px;
+	padding-left: 20px;
+}
+.line-search .line-form li.start-icon {
+	background: url(../image/start-icon.png) no-repeat left center;
+}
+.line-search .line-form li.end-icon {
+	background: url(../image/end-icon.png) no-repeat left center;
+}
+.line-search input {
+	border: none 0;
+	height: 30px;
+	line-height: 30px;
+	color: #333;
+	vertical-align: top;
+}
+.line-search .search-btn {
+	width: 64px;
+	height: 64px;
+	background: #0dcc8f;
+	color: #fff;
+	line-height: 64px;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.check-line .line-results-box {
+	height: 506px;
+	width: 270px;
+	margin: 20px auto;
+	overflow-y: auto;
+	border-bottom: #eee solid 1px;
+	border-top: #eee solid 1px;
+}
+
+.route-list {
+	border-left: #eee solid 1px;
+	border-right: #eee solid 1px;
+	overflow: hidden;
+}
+.route-list .stroke-results {
+	background: #ebf2fd;
+	line-height: 40px;
+	padding: 0 15px;
+	color: #000;
+}
+.route-list .stroke-results em {
+	background: #bcc2ca;
+	height: 20px;
+	width: 1px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+.route-list .start-name {
+	padding: 5px 5px 5px 35px;
+	line-height: 30px;
+	color: #333;
+	background: url(../image/start-icon.png) no-repeat 15px center;
+	border-bottom: #eee solid 1px;
+}
+.route-list .end-name {
+	padding: 5px 5px 5px 35px;
+	line-height: 30px;
+	color: #333;
+	background: url(../image/end-icon.png) no-repeat 15px center;
+}
+.route-list .results-list {
+	overflow: hidden;
+}
+.route-list .results-list li {
+	color: #0052b7;
+	line-height: 30px;
+	padding: 5px 10px 5px 35px;
+	border-bottom: #eee solid 1px;
+}
+/*景点推荐*/
+.attractions-side {
+	width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 78px;
+	overflow: hidden;
+}
+.attractions-list {
+	overflow: hidden;
+	margin-right: -30px;
+}
+
+.attractions-list .item{
+    margin-bottom: 30px;
+    width: 380px;
+    overflow: hidden;
+    float: left;
+    padding-right: 30px;
+    position: relative;
+}
+.attractions-list .item a {
+	display: inline-block;
+}
+.attractions-list .item img {
+	display: inline-block;
+	width: 380px;
+	height: 245px;
+}
+
+.attractions-list .item .hoverbg {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	z-index: 10;
+	display: none;
+	width: 340px;
+	height: 205px;
+	border: rgba(244,244,244,0.6) solid 1px;
+	border: #fff solid 1px \9;
+}
+.attractions-list .item .hoverbg em {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	display: inline-block;
+	color: #fff;
+	font-size: 30px;
+	background: #8dc21c;
+	position: absolute;
+	top: 40px;
+	left: -20px;
+	font-family: "宋体";
+}
+.attractions-list .item a p {
+	width: 380px;
+	color: #333;
+	font-size: 16px;
+	line-height: 36px;
+	padding: 10px 0;
+	text-align: left;
+    background: url(../image/bottomline.jpg) no-repeat left bottom;
+}
+.attractions-list .item a:hover p {
+	color: #8dc21c;
+    background: url(../image/bottomline-hover.jpg) no-repeat left bottom;
+}
+/*住宿推荐*/
+.hotel-side {
+	width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 78px;
+	overflow: hidden;
+}
+.hotel-area {
+	height: 28px;
+	overflow: hidden;
+	text-align: center;
+}
+.hotel-area li {
+	display: inline-block;
+	padding-right: 10px;
+}
+.hotel-area li.first {
+	color: #999;
+	line-height: 28px;
+}
+.hotel-area li a {
+	display: inline-block;
+	border: #f0f0f0 solid 1px;
+	height: 26px;
+	line-height: 26px;
+	color: #333;
+	padding: 0 20px;
+}
+.hotel-area li.active a {
+	color: #fff;
+	background: #8dc21c;
+}
+
+.hotel-list {
+	margin-right: -30px;
+	overflow: hidden;
+	padding-top: 40px;
+}
+.hotel-list li {
+	width: 380px;
+	float: left;
+	padding-right: 30px;
+	padding-bottom: 24px;
+	display: inline;
+}
+.hotel-list li a {
+	display: block;
+}
+.hotel-list li img {
+	width: 380px;
+	height: 254px;
+}
+.hotel-list li .hotel-intro {
+	background: #f4f4f4;
+	padding: 0 20px;
+	height: 80px;
+}
+.hotel-list li .hotel-intro .title {
+	color: #333;
+	font-size: 18px;
+	height: 26px;
+	line-height: 26px;
+	padding-top: 10px;
+}
+.hotel-list li .hotel-intro .detail {
+	color: #999;
+	line-height: 18px;
+	padding-top: 10px;
+}
+.hotel-list li .hotel-intro .detail .address {
+	background: url(../image/address-icon.png) no-repeat left center;
+	padding-left: 22px;
+	display: inline-block;
+	width: 260px;
+}
+.hotel-list li .hotel-intro .detail .address em {
+	color: #8dc21c;
+}
+.hotel-list li .hotel-intro .detail .view {
+	background: url(../image/detail-icon.png) no-repeat left center;
+	padding-left: 22px;
+	display: inline-block;
+	float: right;
+}
+.hotel-list li a:hover .hotel-intro {
+    background: #8dc21c;
+}
+.hotel-list li a:hover .hotel-intro .title ,.hotel-list li a:hover .hotel-intro .detail,.hotel-list li a:hover .hotel-intro .detail .address em{
+    color: #fff;
+}
+.hotel-list li a:hover .hotel-intro .detail .address {
+	background: url(../image/address-icon-hover.png) no-repeat left center;
+}
+.hotel-list li a:hover .hotel-intro .detail .view {
+	background: url(../image/detail-icon-hover.png) no-repeat left center;
+}
+.hotel-side .page-box {
+	padding-top: 10px;
+}
+
+/*美食诱惑*/
+.food-side {
+	width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 78px;
+	overflow: hidden;
+}
+.food-list {
+	margin-right: -30px;
+	overflow: hidden;
+}
+.food-list li {
+	width: 380px;
+	height: 332px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	float: left;
+	display: inline;
+	position: relative;
+}
+.food-list li a {
+	display: block;
+}
+.food-list img {
+	width: 380px;
+	height: 248px;
+}
+.food-list .detail {
+	height: 84px;
+	padding: 0 44px 0 10px;
+}
+.food-list a:hover .detail {
+	height: 83px;
+	border-bottom: #d9d9d9 solid 1px;
+	background: url(../image/food-icon-hover.png) no-repeat right center;
+}
+.food-list .detail .title {
+	font-size: 16px;
+	color: #333;
+	line-height: 30px;
+	padding-top: 10px;
+}
+.food-list .detail .series {
+   color: #999;	
+   padding-top: 10px;
+}
+.food-list li .hover {
+	background: rgba(0,0,0,0.2) url(../image/add-icon.png) no-repeat center center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+	width: 380px;
+	height: 248PX;
+}
+/*九龙购物*/
+.shop-side {
+	width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 78px;
+	overflow: hidden;
+}
+.shop-list {
+	margin-right: -60px;
+	overflow: hidden;
+}
+.shop-list li {
+	width: 360px;
+	height: 410px;
+	float: left;
+	padding-right: 60px;
+	display: inline;
+}
+.shop-list li .title {
+	height: 50px;
+	line-height: 50px;
+	padding-right: 40px;
+	font-size: 16px;
+	color: #333;
+}
+.shop-list li a:hover .title {
+	background: url(../image/shop-icon-hover.png) no-repeat right center;
+	transition: none;
+
+}
+.detail-distance {
+	text-align: center;
+	height: 61px;
+	line-height: 61px;
+}
+.detail-distance span {
+	background: url(../image/address-icon.png) no-repeat left center;
+	padding-left: 22px;
+	display: inline-block;
+	color: #999;
+}

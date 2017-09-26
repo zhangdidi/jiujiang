@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+<title>九龙湿地-九龙文化</title>
+
+<link rel="stylesheet" href="css/jquery.fullPage.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/culture.css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript">
+$(function() {
+	/*背景图切换 */
+	$('#culture-page').fullpage({
+		continuousVertical: true,
+		anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+		menu: '#culture-menu'
+	});
+	    /*用按钮控制图片左右滚动 */
+            $(".slide-box").Slide({
+                effect: "scroolLoop",
+                autoPlay: false,
+                speed: "normal",
+                timer: 3000,
+                steps: 1
+            });
+	
+	//选项卡
+	Method.tabinit('.origin-tab-bar a','.origin-tab-content');
+	Method.tabinit('.culture-tab-bar a','.culture-tab-content');
+	Method.tabinit('.ship-tab-bar a','.ship-tab-content');
+	Method.tabinit('.lake-tab-bar a','.lake-tab-content');
+
+        //头部微信二维码
+        $('#weixin-code').mouseover(function(){
+        	$('.weixin-code').fadeIn();
+        });
+        $('#weixin-code').mouseout(function(){
+        	$('.weixin-code').fadeOut();
+        });
+});	
+</script>
+</head>
+
+<body>
+	<div class="top top-fixed">
+		<div class="topbox">
+			<div class="logo">
+				<a href="index.html"><img src="image/logo.png" alt="img"  /></a>
+		    </div>
+		    <!--菜单开始-->
+		    <div class="menu">
+		    	<ul class="clearfix">
+		    		<li>
+		    			<a href="index.html"><span class="home-icon"></span>首  页</a>
+		    		</li>
+		    		<li>
+		    			<a href="introduce.html"><span class="scenic-icon"></span>景区介绍</a>
+		    		</li>
+		    		<li>
+		    			<a href="culture.html" class="active"><span class="culture-icon"></span>九龙文化</a>
+		    		</li>
+		    		<li>
+		    			<a href="tourist-guide.html"><span class="guide-icon"></span>游客指南</a>
+		    		</li>
+		    		<li>
+		    			<a href="interaction.html"><span class="interaction-icon"></span>互动交流</a>
+		    		</li>
+		    		<li>
+		    			<a href=""><span class="book-icon"></span>在线预订</a>
+		    		</li>
+		    	</ul>
+		    </div>
+		    <!--菜单结束-->		    
+		    <div class="top-right">
+		    	<ul class="clearfix">
+		    		<li class="weixin">
+		    			<a href="#" id="weixin-code"></a>
+		    		</li>
+		    		<li>
+		    			<span class="line"></span>
+		    		</li>
+		    		<li>
+				    	<a href="#">[EN]</a>
+		    		</li>
+		    	</ul>
+		    </div>
+		    
+		    <div class="weixin-code">
+		    	<img src="image/weixine-rwm.jpg" /> 
+		    </div>
+		</div>
+	</div>
+	
+	<div id="culture-menu">
+		<ul>
+			<li data-menuanchor="page1" class="active"><a href="#page1">九龙传说</a></li>
+			<li data-menuanchor="page2"><a href="#page2">处州由来</a></li>
+			<li data-menuanchor="page3"><a href="#page3">清香白莲</a></li>
+			<li data-menuanchor="page4"><a href="#page4">瓯江船帮</a></li>
+			<li data-menuanchor="page5"><a href="#page5">碧湖文踪</a></li>
+		</ul>
+		
+    </div>
+	
+	<div id="culture-page">
+		
+		<div class="section page1">
+	       <div class="content-side">
+	       	  <div class="dragon-story">
+	       	  	 <div class="title">龙的传说</div>
+	       	  	 <div class="txt">
+	       	  	 	<p>九龙湿地公园名称来源于九龙村。</p>
+	       	  	 	<p>关于九龙村地名的来历，《纪氏宗谱》有这样一段记载：九龙，原先共有周堡、叶堡、下叶、纪堡庄等几个村落。因几个小村落都是沿江而建，相连而呈半月形，酷似一条长龙，所以又合称为“龙溪”。公元961年，纪氏迁到这里，在村内挖了九口井，井水清澈明亮，宛如九颗闪闪发光的明珠，并在江边建起九个船埠头，埠头与水井相配，恰似“九龙戏珠”，因而将龙溪改名为“九龙”。</p>
+	       	  	 </div>
+	       	  </div>
+	       </div>
+		</div>
+		
+		<div class="section page2">
+			<div class="content-side">
+				<div class="origin">
+					<div class="origin-title"><img src="image/origin-title.png" /></div>
+					<div class="origin-tab-bar">
+						<ul>
+							<li>
+								<a href="javascript:void(0)">处州由来</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">隐士文化</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">士大夫文化</a>
+							</li>
+						</ul>
+					</div>
+					<div class="origin-tab-content">
+						<div class="txt">
+							<p>处州，浙江省丽水市的古称。</p>
+							<p>古人常以天上的星宿来指配州郡，而丽水地处少微星座，少微星共有四颗星，最南一颗星名为处士星，所以就以处州为州名。据明代的《名胜志》载：“隋开皇九年，处士星见于分野，因置处州。</p>
+							<p>少微是中国古代星官名，属三垣之中的太微垣，泛指天庭的一半官员和士大夫。《史记·天官书》云：“延藩西有隋星五，曰少微，士大夫……”处州上直“少微处士星”，而少微四星在太微西士大夫之位也，南第一星为处士，第二星为议士，第三星为博士，第四星为星大夫。处士，是指有德才而不愿做官的人。</p>
+							<p>处士者德而隐士，潜龙于野——隐士、士大夫。</p>
+						</div>
+					</div>
+					<div class="origin-tab-content">
+						<div class="txt">
+							<p>隐士秦宓，他服膺仲山甫的德行，践行隽不疑的直率，枕石而卧临溪漱盥，身着麻制衣袍吟咏山林之间，在仁义的道路上休息，于浩然的境界中恬淡，高风亮节，真诚不渝，即使古之高人隐士，也还比不上他。</p>
+						</div>
+					</div>
+					<div class="origin-tab-content">
+						<div class="txt">
+							<p>开禧三年叶宗鲁《处州应星楼记》认为，郡与少微处士星对应，吉星高照，“吾州素号多士，衣冠文物之盛”皆得益于此，处州大地将人才辈出，科甲兴隆。</p>
+							<p>自古以来，处州出了很多人才：世界香菇的发明者吴煜（吴三公）增被越国公的著名道士叶法善、唐末道门领袖杜光庭，名列“宋代四大女词人“的张玉娘、著名诗人叶绍翁、被誉为”三不朽“为人的明代开国功臣刘基等。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section page3"><!--这个栏目有5张背景图片，切换标签的时候需要更换背景图-->
+			<div class="content-side">
+				<div class="culture">
+					<div class="culture-common-title">清香白莲</div>
+					<div class="culture-tab-bar">
+						<ul>
+							<li>
+								<a href="javascript:void(0)">处州白莲</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">生态文化</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">休闲文化</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">宗教文化</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">中医文化</a>
+							</li>
+						</ul>
+					</div>
+					<div class="border-top"><img src="image/border-top.png" /></div>
+					<div class="culture-tab-content">
+						<div class="txt">
+							<p>处州白莲为浙江省著名特产，因原产丽水市，古称处州而得名。因荷塘环城，故有“莲城”之称。所产莲子称“处州白莲”，因其色白、粒大、脆绵、品质好而闻名全国。
+早在一千四百多年前，处州已开始种植荷莲。南宋著名诗人范成大任处州郡守时，在府治内构筑"莲城堂"，公余闲暇赏荷品莲。明戏曲家汤显祖曾任处州府遂昌县令，在他的诗篇中，每每提到"莲城"。丽水早在八百年前就有"莲城"之誉。</p>
+						    <p>中国人自古热爱年华，儒道释三教均讲年华作为圣人、圣物的象征之一。</p>
+						    <p>于污浊恶世而不染卓，历练成就。</p>
+						</div>
+					</div>
+					<div class="culture-tab-content">
+						<div class="txt">
+							<p class="center">植被茂密、空气清新、水质纯净才能孕育出好的白莲。</p>
+							<p class="center">处州白莲的闻名无不彰显着环境优美、生态优良。</p>
+							<p class="center">丽水是长三角的绿心绿肺，九龙是丽水的生态屏障和自然花园。</p>
+						</div>
+					</div>
+					<div class="culture-tab-content">
+						<div class="txt">
+							<p class="center">自“处州白莲节”举办以来，</p>
+							<p class="center">一朵朵出淤泥而不染的荷花竞相开放，</p>
+							<p class="center">引来八方游客前来观赏。</p>
+							<p class="center"><img src="image/culture-img001.png" /></p>
+						</div>
+					</div>
+					<div class="culture-tab-content">
+						<div class="txt">
+							<p class="center">云水禅心，清净如莲。</p>
+							<p class="center">中国人自古热爱莲花，</p>
+							<p class="center">儒道释三教均将莲花作为圣人、圣物的象征之一。</p>
+						</div>
+					</div>
+					<div class="culture-tab-content">
+						<div class="txt">
+							<p class="center">处州白莲具有粒大而圆、饱满、色白、肉绵、味甘五大特点，为莲中之珍品，</p>
+							<p class="center">其性湿、味甘、有补中之益气、安心养神、活络润肺、延年益寿等功效，</p>
+							<p class="center">是名贵的药材和高级营养滋补品。</p>
+						</div>
+					</div>
+			        <div class="border-bottom"><img src="image/border-bottom.png" /></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section page4">
+			<div class="content-side">
+				<div class="ship">
+					<div class="culture-common-title">瓯江船帮</div>
+					<div class="ship-tab-bar">
+						<ul>
+							<li>
+								<a href="javascript:void(0)">瓯江船帮</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">船帮文化</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">民俗文化</a>
+							</li>
+						</ul>
+					</div>
+					<div class="border-top"><img src="image/border-top-gray.png" /></div>
+					<div class="ship-tab-content">
+						<div class="txt">
+							<p>八百里瓯江是丽水人民的母亲河。千百年来瓯江水养育了世世代代的丽水人民。同时，瓯江也孕育了悠久的船帮文化。瓯江船帮文化是指人们在瓯江流域从事与船和水有关的社会生产生活中所产生的精神财富和物质财富的总和。主要表现在和船相关的历史，船运、渔业的生产生活习俗，宗教信仰，船的建造技艺，沿江的码头、渡口、险滩、寺庙、古民居等遗存，以及与船和水相关的歌谣、传说、音乐、文学作品等。</p>
+						</div>
+					</div>
+					<div class="ship-tab-content">
+						<div class="txt">
+							<p>悠久的历史。在瓯江流域和船有关的历史非常悠久。1960年在温州市郊西山出土的两艘双体独木舟，证明早在远古时期，生活在瓯江流域的瓯人，即利用瓯江两岸丰富的木材资源，学会了双体独木舟的建造。晋代大书法家王羲之曾乘木船溯瓯江而历好溪。永嘉太守谢灵运也数度泛舟瓯江，观赏山水，并在石门洞留下了摩崖诗迹。宋叶适多次乘船往返龙泉温州，而且他还根据亲身体验，为舴艋船改制了硬篾船篷。南宋绍兴二十年（1160）春，陆游乘小船溯瓯江北上，在急流险滩中遭遇险情，经船工努力奋争，终化险为夷。诗人写下了“溪流乱石似牛毛，雨过狂澜势转豪，寄语河公莫作戏，从来忠信任风涛”的诗句。</p>
+						</div>
+					</div>
+					<div class="ship-tab-content">
+						<div class="txt">
+							<p>独特的习俗。瓯江上的船工和渔民在千百年的生活劳动中，形成了与陆地上居民不同的生产、生活习俗。如在船工开船、开排前都要举行祭船（排）的仪式，祈求龙王、关公护佑一路平安无事。渔民捕鱼时都要大清早在船上讲福建话祭拜龙王和妈祖后才开船。碧湖保定村船工在端午节时，要凑钱请剧团演戏，称为“船戏”。每年首航时，要选择吉日“做顺风”，在船上天妃娘娘神龛前，点香烛、供上祭品，启航时放鞭炮，各渔船之间不打招呼。</p>
+						</div>
+					</div>
+			        <div class="border-bottom"><img src="image/border-bottom-gray.png" /></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section page5">
+			<div class="content-side">
+				<div class="lake">
+					<div class="culture-common-title">碧湖文踪</div>
+					<div class="lake-tab-bar">
+						<ul>
+							<li>
+								<a href="javascript:void(0)">碧湖文踪</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">民俗节事</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">信仰传说</a>
+							</li>
+						</ul>
+					</div>
+					<div class="border-top"><img src="image/border-top-lake.png" /></div>
+					<div class="lake-tab-content">
+						<div class="txt">
+							<p>湖镇史称“西乡”，位于莲都区西南部，距市区20公里，处于瓯江中游，自古以来就是商贾云集的经济繁华之地，是丽水、宣平、松阳、云和、青田一带的集贸中心，至今仍保持“邑西都会”之美誉。碧湖镇拥有千年古镇、农业打针、人文打针、商贸打针、民俗名镇等多重名片。</p>
+						    <p>这里有建于南朝萧梁天监四年(公元505年)的通济堰，距今已有1500年历史，是浙江省最古老的大型水利工程，1962年列为省级文保单位。2001年06月25日，通济堰作为南朝至清代古建筑，被国务院批准列入第五批全国重点文物保护单位名单。2014年通济堰成功入选世界灌溉工程遗产。主要有“三个世界之最、六个千年文化”。世界首创的通济堰拱形大坝、水上立交桥和农田水利法规（古碑群），与千年古镇、千年双龙庙会、千年古窑址、千年古村落、千年古樟树群、千年古墓群等人文盛景，共同展示给世人一篇独特而厚重的历史传承。</p>
+						</div>
+						<div class="lake-preview slide-box">  
+			                <div class="lake-arrow slide-arrow">
+					        	<a class="prev" href="javascript:void(0);"></a>
+					        	<a class="next" href="javascript:void(0);"></a>
+					        </div> 		        
+					        <div class="lake-content slide-content">  
+					            <ul class="lake-list slide-list">  
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img01.jpg" />
+					                    	<p class="title ellipsis">千年古埠</p>  
+					                    </a>  
+					                </li>  
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img02.jpg" />
+					                    	<p class="title ellipsis">千年古樟树群-护堰香樟</p>  
+					                    </a>  
+					                </li>
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img03.jpg" />
+					                    	<p class="title ellipsis">千年古镇-碧湖镇</p>  
+					                    </a>  
+					                </li>
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img02.jpg" />
+					                    	<p class="title ellipsis">千年古樟树群-护堰香樟</p>  
+					                    </a>  
+					                </li>
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img03.jpg" />
+					                    	<p class="title ellipsis">千年古镇-碧湖镇</p>  
+					                    </a>  
+					                </li>
+					            </ul>  
+					        </div>  
+				        </div>
+					</div>
+
+					<div class="lake-tab-content">
+						<div class="txt">
+							<p>人民的风俗习惯。清朝薛福成《创开中国铁路议疏》：“民俗既变，然后招商承办……可以渐推渐广，渐续渐远。”</p>
+						    <p>民众的生活、生产、风尚习俗等情况。《管子·正世》：“古之欲正世调天下者，必先观国政，料事务，察民俗，本治乱之所生，知得失之所在，然后从事。”</p>
+						    <p>民众，百姓。宋·毕京《和范希文怀庆朔堂》：“几多民俗熙熙乐，似到老聃台上来。”</p>
+						</div>
+						<div class="lake-preview">  
+			                <div class="lake-arrow">
+					        	<a class="prev" href="javascript:void(0);"></a>
+					        	<a class="next" href="javascript:void(0);"></a>
+					        </div> 		        
+					        <div class="lake-content">  
+					            <ul class="lake-list">  
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img01.jpg" />
+					                    	<p class="title ellipsis">千年古埠</p>  
+					                    </a>  
+					                </li>  
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img02.jpg" />
+					                    	<p class="title ellipsis">千年古樟树群-护堰香樟</p>  
+					                    </a>  
+					                </li>
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img03.jpg" />
+					                    	<p class="title ellipsis">千年古镇-碧湖镇</p>  
+					                    </a>  
+					                </li>
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img02.jpg" />
+					                    	<p class="title ellipsis">千年古樟树群-护堰香樟</p>  
+					                    </a>  
+					                </li>
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img03.jpg" />
+					                    	<p class="title ellipsis">千年古镇-碧湖镇</p>  
+					                    </a>  
+					                </li>
+					            </ul>  
+					        </div>  
+				        </div>
+					</div>
+
+					<div class="lake-tab-content">
+						<div class="txt">
+							<p>1.传说是神话演变而来具有一定历史性的故事的名称</p>
+						    <p>2.有关某人、某事或某地的过去事迹的一整套传闻。</p>
+						    <p>3.纯地方性传说中的人类及历史价值。</p>
+						    <p>4.在文字尚未发明的时代，人们要对历史做纪录只能利用口耳相传的方式，此即为传说的由来。</p>
+						    <p>中国的神话传说是最悠久的了。</p>
+						</div>
+						<div class="lake-preview">  
+			                <div class="lake-arrow">
+					        	<a class="prev" href="javascript:void(0);"></a>
+					        	<a class="next" href="javascript:void(0);"></a>
+					        </div> 		        
+					        <div class="lake-content">  
+					            <ul class="lake-list">  
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img01.jpg" />
+					                    	<p class="title ellipsis">千年古埠</p>  
+					                    </a>  
+					                </li>  
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img02.jpg" />
+					                    	<p class="title ellipsis">千年古樟树群-护堰香樟</p>  
+					                    </a>  
+					                </li>
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img03.jpg" />
+					                    	<p class="title ellipsis">千年古镇-碧湖镇</p>  
+					                    </a>  
+					                </li>
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img02.jpg" />
+					                    	<p class="title ellipsis">千年古樟树群-护堰香樟</p>  
+					                    </a>  
+					                </li>
+					                <li>  
+					                    <a href="#">
+					                    	<img src="image/lake-img03.jpg" />
+					                    	<p class="title ellipsis">千年古镇-碧湖镇</p>  
+					                    </a>  
+					                </li>
+					            </ul>  
+					        </div>  
+				        </div>
+					</div>
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+    
+
+	<div class="copyright-wrap">
+		<div class="copyright-box">
+			<span>咨询热线<i class="tel">0578-8166733</i></span>
+			<span class="floatR">© 2017 九龙湿地公园 保留所有权利</span>
+			<!-- <span class="floatR">
+				<iframe allowtransparency="true" frameborder="0" width="240" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=&f=c0c0c0&q=0&e=0&a=1&c=54511&w=240&h=36&align=center"></iframe>
+			</span> -->
+		</div>
+	</div>
+	
+
+
+</body>
+
+</html>
